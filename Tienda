@@ -1,0 +1,39 @@
+# BLUNTEDSHOP — prototipo funcional
+
+Incluye:
+- Diseño responsive desktop/móvil.
+- Productos y precios actuales:
+  - Espejos Duke 200: $39.999
+  - Arandelas anodizadas: $6.999
+- Botón flotante de WhatsApp.
+- Flujo de compra al tocar el precio.
+- Geolocalización del navegador (con permiso del usuario).
+- Ingreso manual de dirección.
+- Estimación de envío configurable.
+- Mensaje de WhatsApp precargado con producto, precio, ubicación/dirección, envío y total.
+
+## Cómo probarlo
+Abrí `index.html` en un navegador. Para que la geolocalización funcione de forma confiable, servilo por HTTPS o localhost.
+
+Ejemplo rápido con Python:
+`python3 -m http.server 8000`
+
+Luego abrí:
+`http://localhost:8000`
+
+## Antes de publicarlo
+El WhatsApp ya quedó configurado como `+54 9 11 5741-8056`.
+
+La tarifa de envío actual es una estimación de prototipo. Para calcular envíos reales hay que conectar la web con la API del correo/logística que uses (Andreani, Correo Argentino, OCA, etc.) o con tu propia tabla de zonas.
+
+Para cobrar dentro de la web también hace falta integrar un proveedor de pagos, por ejemplo Mercado Pago, con tus credenciales.
+
+
+## Envío estimado configurado
+- CABA / GBA: $4.500
+- Buenos Aires interior: $6.500
+- Resto del país: $8.500
+
+Si el cliente permite ubicación, el prototipo asigna una zona aproximada por coordenadas.
+Si escribe una dirección, intenta detectar la zona por texto.
+El valor final del envío se confirma por WhatsApp.
