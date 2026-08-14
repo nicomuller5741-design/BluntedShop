@@ -1,0 +1,9 @@
+<!-- REEMPLAZAR SOLO ESTAS 4 LÍNEAS EN index.html -->
+
+<img src="espejos-duke-200.jpg" alt="Espejos Duke 200">
+
+<img src="arandelas-anodizadas.jpg" alt="Arandelas anodizadas">
+
+<img src="manijas-wirtz.jpg" alt="Manijas regulables Wirtz">
+
+<img src="cubre-discos-wirtz.jpg" alt="Cubre discos Wirtz">
