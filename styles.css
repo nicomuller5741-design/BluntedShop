@@ -1,0 +1,117 @@
+
+:root{
+  --bg:#050505; --panel:#111; --panel2:#171717; --text:#fff; --muted:#b9b9b9;
+  --line:#292929; --accent:#ff5a00; --wa:#25D366;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--text);font-family:Arial,Helvetica,sans-serif}
+a{color:inherit;text-decoration:none}
+button,input{font:inherit}
+.topbar{height:94px;display:flex;align-items:center;gap:48px;padding:0 3vw;border-bottom:1px solid #111;position:sticky;top:0;background:rgba(5,5,5,.96);backdrop-filter:blur(10px);z-index:20}
+.brand{font-size:38px;font-weight:900;font-style:italic;letter-spacing:-2px;white-space:nowrap}
+.brand span{display:block;font-size:11px;font-style:normal;letter-spacing:6px;margin:5px 0 0 22px;font-weight:500}
+.nav{display:flex;gap:42px;margin-left:auto;font-size:14px}
+.nav a:hover{color:var(--accent)}
+.menuBtn{display:none;margin-left:auto;border:0;background:none;color:white;font-size:28px}
+.hero{min-height:390px;position:relative;overflow:hidden;background:
+  linear-gradient(90deg,rgba(5,5,5,.98) 0%,rgba(5,5,5,.82) 40%,rgba(5,5,5,.28) 72%,rgba(5,5,5,.12) 100%),
+  url("hero-moto.jpg") center right/cover no-repeat}
+.hero::after{content:"";position:absolute;inset:0;background:
+  linear-gradient(115deg,transparent 48%,rgba(255,255,255,.04) 49%,transparent 51%);
+  opacity:.35}
+.heroCopy{position:relative;z-index:2;padding:78px 3vw 65px;max-width:650px}
+.eyebrow{font-size:16px;margin-bottom:16px}
+h1{font-size:58px;line-height:.96;margin:0 0 20px;font-weight:900;letter-spacing:-2px}
+.hero p{font-size:20px;color:#eee;line-height:1.45;max-width:420px;margin-bottom:25px}
+.btn{display:inline-flex;align-items:center;justify-content:center;padding:15px 22px;border:1px solid #fff;border-radius:4px;font-weight:700;cursor:pointer}
+.primary{background:#fff;color:#090909}
+.primary:hover{background:#ddd}
+.ghost{background:transparent;color:white}
+.benefits{display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.benefits article{display:flex;gap:16px;padding:20px 3vw;border-right:1px solid var(--line);align-items:center}
+.benefits article:last-child{border-right:0}
+.icon{font-size:48px}
+.benefits strong{display:block;font-size:14px;margin-bottom:6px}
+.benefits span{display:block;color:var(--muted);font-size:13px}
+.productsSection{padding:15px 1.5vw 10px}
+.sectionTitle{text-align:center;padding:0 0 14px}
+.sectionTitle h2{margin:0;font-size:25px}
+.line{height:2px;width:50px;background:white;margin:8px auto 0}
+.productsGrid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+.card{background:linear-gradient(145deg,#151515,#0d0d0d);min-height:310px;padding:16px;position:relative;border:1px solid #161616}
+.tag{position:absolute;left:14px;top:14px;background:#050505;padding:6px 10px;border-radius:4px;font-size:11px}
+.productVisual{height:175px;display:flex;align-items:center;justify-content:center;overflow:hidden;border-radius:2px;background:none!important;color:transparent;text-shadow:none}
+
+
+.productVisual img{
+  width:100%;
+  height:100%;
+  object-fit:contain;
+  object-position:center;
+  display:block;
+  max-width:100%;
+  max-height:100%;
+}
+.productTitle{
+  cursor:pointer;
+  transition:color .2s ease;
+}
+.productTitle:hover{
+  color:var(--accent);
+}
+.whatsappFloat svg{
+  display:block;
+  margin:auto;
+}
+
+.card h3{font-size:17px;margin:4px 0 8px}
+.card p{color:var(--muted);font-size:13px;margin:0 0 10px}
+.priceBtn{background:none;border:0;color:#fff;padding:0;font-size:20px;cursor:pointer;text-align:left}
+.priceBtn:hover{color:var(--accent)}
+.ctaStrip{margin:16px 1.5vw 0;padding:26px;background:#0f0f0f;border:1px solid var(--line);display:flex;justify-content:space-between;gap:20px;align-items:center}
+.ctaStrip strong,.ctaStrip span{display:block}
+.ctaStrip span{color:var(--muted);margin-top:6px}
+footer{display:grid;grid-template-columns:1fr 1fr 1fr;align-items:center;padding:22px 3vw 30px;border-top:1px solid var(--line);margin-top:16px;font-size:13px}
+footer>div:first-child{display:flex;gap:12px;align-items:center}
+footer>div:last-child{text-align:right}
+.footerBrand{text-align:center;font-weight:900;font-style:italic;font-size:30px}
+.whatsappFloat{position:fixed;right:28px;bottom:28px;width:64px;height:64px;border-radius:50%;border:2px solid #fff;background:var(--wa);color:white;font-size:30px;z-index:30;cursor:pointer;box-shadow:0 8px 30px #000}
+.waHint{position:fixed;right:22px;bottom:102px;background:#fff;color:#111;padding:11px 14px;border-radius:8px;font-size:12px;z-index:29;box-shadow:0 8px 30px #000}
+dialog{border:1px solid #303030;background:#0d0d0d;color:#fff;border-radius:12px;width:min(520px,92vw);padding:0}
+dialog::backdrop{background:rgba(0,0,0,.78)}
+.checkout{padding:26px;position:relative}
+.close{position:absolute;right:14px;top:10px;border:0;background:none;color:#fff;font-size:28px;cursor:pointer}
+.checkout h2{font-size:28px;margin:0}
+.checkoutPrice{font-size:28px;font-weight:800;margin:8px 0 22px}
+.checkout label{display:block;font-weight:700;margin-bottom:10px}
+.locationActions{display:flex;gap:12px;align-items:center;margin-bottom:10px}
+.locationActions .btn{padding:12px 14px}
+#geoStatus{color:var(--muted);font-size:12px}
+.checkout input{width:100%;background:#161616;border:1px solid #333;color:white;padding:14px;border-radius:6px;margin-bottom:12px}
+.shippingBox{display:flex;justify-content:space-between;border-top:1px solid #282828;padding:14px 0;color:#ddd}
+.shippingBox.total{font-size:19px}
+.full{width:100%;margin-top:8px}
+.checkout small{display:block;color:#888;margin-top:12px;line-height:1.4}
+@media (max-width:900px){
+  .topbar{height:72px;padding:0 18px}.brand{font-size:24px}.brand span{font-size:8px;letter-spacing:4px;margin-left:6px}
+  .menuBtn{display:block}.nav{display:none;position:absolute;top:72px;left:0;right:0;background:#080808;flex-direction:column;margin:0;padding:18px;gap:20px;border-bottom:1px solid #222}.nav.open{display:flex}
+  .hero{min-height:430px}.heroCopy{padding:70px 24px}.heroCopy h1{font-size:44px}.hero p{font-size:17px}
+  .benefits{grid-template-columns:repeat(2,1fr)}.benefits article:nth-child(2){border-right:0}
+  .productsGrid{grid-template-columns:1fr 1fr}.card{min-height:280px}.productVisual{height:150px}
+  footer{grid-template-columns:1fr;text-align:center;gap:16px}footer>div:first-child{justify-content:center}footer>div:last-child{text-align:center}
+}
+@media (max-width:560px){
+  .heroCopy h1{font-size:38px}.benefits{grid-template-columns:1fr}.benefits article{border-right:0}
+  .productsSection{padding:10px}.productsGrid{grid-template-columns:1fr}.card{min-height:210px;display:grid;grid-template-columns:155px 1fr;grid-template-rows:auto auto auto;column-gap:14px;align-items:center}
+  .productVisual{grid-row:1/4;height:170px;font-size:45px;padding:8px}.tag{display:none}.card h3{margin-top:30px}.priceBtn{margin-bottom:26px}
+  .ctaStrip{flex-direction:column;align-items:flex-start}.waHint{display:none}
+  .whatsappFloat{width:58px;height:58px;right:18px;bottom:18px}
+  .locationActions{flex-direction:column;align-items:stretch}
+}
+
+.btn.mp{background:#009ee3;color:white;border-color:#009ee3;margin-top:8px}
+.btn.mp:hover{filter:brightness(.92)}
+.paymentStatus{min-height:18px;margin:9px 0;color:#b9b9b9;font-size:12px;text-align:center}
+.paymentResult{position:sticky;top:94px;z-index:15;padding:13px 3vw;text-align:center;font-weight:700;background:#171717;border-bottom:1px solid #333}
+@media(max-width:900px){.paymentResult{top:72px}}
