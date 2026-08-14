@@ -87,6 +87,12 @@ dialog::backdrop{background:rgba(0,0,0,.78)}
   .heroCopy h1{font-size:38px}.benefits{grid-template-columns:1fr}.benefits article{border-right:0}
   .productsSection{padding:10px}.productsGrid{grid-template-columns:1fr}.card{min-height:210px;display:grid;grid-template-columns:120px 1fr;grid-template-rows:auto auto auto;column-gap:14px;align-items:center}
   .productVisual{grid-row:1/4;height:150px;font-size:45px}.tag{display:none}.card h3{margin-top:30px}.priceBtn{margin-bottom:26px}
+  .productVisual img{
+    width:100%;
+    height:100%;
+    object-fit:contain;
+    display:block;
+}
   .ctaStrip{flex-direction:column;align-items:flex-start}.waHint{display:none}
   .whatsappFloat{width:58px;height:58px;right:18px;bottom:18px}
   .locationActions{flex-direction:column;align-items:stretch}
