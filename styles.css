@@ -31,7 +31,7 @@ h1{font-size:58px;line-height:.96;margin:0 0 20px;font-weight:900;letter-spacing
 .benefits{display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
 .benefits article{display:flex;gap:16px;padding:20px 3vw;border-right:1px solid var(--line);align-items:center}
 .benefits article:last-child{border-right:0}
-.icon{font-size:32px}
+.icon{font-size:48px}
 .benefits strong{display:block;font-size:14px;margin-bottom:6px}
 .benefits span{display:block;color:var(--muted);font-size:13px}
 .productsSection{padding:15px 1.5vw 10px}
@@ -41,7 +41,7 @@ h1{font-size:58px;line-height:.96;margin:0 0 20px;font-weight:900;letter-spacing
 .productsGrid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
 .card{background:linear-gradient(145deg,#151515,#0d0d0d);min-height:310px;padding:16px;position:relative;border:1px solid #161616}
 .tag{position:absolute;left:14px;top:14px;background:#050505;padding:6px 10px;border-radius:4px;font-size:11px}
-.productVisual{height:175px;display:flex;align-items:center;justify-content:center;background-position:center;background-size:cover;background-repeat:no-repeat;overflow:hidden;border-radius:2px;color:transparent;text-shadow:none}
+.productVisual{height:100px;display:flex;align-items:center;justify-content:center;background-position:center;background-size:countain;background-repeat:no-repeat;overflow:hidden;border-radius:2px;color:transparent;text-shadow:none}
 
 .mirror{background-image:url("espejos-duke-200.jpg")}
 .washers{background-image:url("arandelas-anodizadas.jpg")}
