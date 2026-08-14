@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>BLUNTEDSHOP — Motorcycle Parts</title>
+  <meta name="description" content="Accesorios premium para motos. Envíos a todo el país y atención personalizada." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#inicio" aria-label="BLUNTEDSHOP">BLUNTEDSHOP <span>MOTORCYCLE PARTS</span></a>
+    <nav class="nav" id="nav">
+      <a href="#productos">ESPEJOS</a>
+      <a href="#productos">ACCESORIOS</a>
+      <a href="#ofertas">OFERTAS</a>
+      <a href="#contacto">CONTACTO</a>
+    </nav>
+    <button class="menuBtn" id="menuBtn" aria-label="Abrir menú">☰</button>
+  </header>
+
+  <main id="inicio">
+    <div id="paymentResult" class="paymentResult" hidden></div>
+    <section class="hero">
+      <div class="heroOverlay"></div>
+      <div class="heroCopy">
+        <div class="eyebrow">ACCESORIOS PREMIUM</div>
+        <h1>ESTILO Y<br>COMODIDAD PARA MOTOS.</h1>
+        <p>Accesorios para los que buscan algo distinto.</p>
+        <a class="btn primary" href="#productos">COMPRAR AHORA →</a>
+      </div>
+    </section>
+
+    <section class="benefits">
+      <article><div class="icon">◇</div><div><strong>CALIDAD PREMIUM</strong><span>Productos seleccionados</span></div></article>
+      <article><div class="icon">▣</div><div><strong>ENVÍOS A TODO EL PAÍS</strong><span>Rápidos y seguros</span></div></article>
+      <article><div class="icon">▭</div><div><strong>HASTA 12 CUOTAS</strong><span>Con tarjetas seleccionadas</span></div></article>
+      <article><div class="icon">◉</div><div><strong>ATENCIÓN PERSONALIZADA</strong><span>Estamos para ayudarte</span></div></article>
+    </section>
+
+    <section id="productos" class="productsSection">
+      <div class="sectionTitle">
+        <h2>MÁS VENDIDOS</h2>
+        <div class="line"></div>
+      </div>
+
+      <div class="productsGrid">
+        <article class="card">
+          <div class="tag">★ MÁS VENDIDO</div>
+          <div class="productVisual mirror">◢</div>
+          <h3>ESPEJOS DUKE 200</h3>
+          <p>Retrovisores para KTM Duke 200</p>
+          <button class="priceBtn" data-product="Espejos Duke 200" data-price="39999">$ 39.999</button>
+        </article>
+
+        <article class="card">
+          <div class="productVisual washers">● ● ●</div>
+          <h3>ARANDELAS ANODIZADAS</h3>
+          <p>Aluminio CNC – M6</p>
+          <button class="priceBtn" data-product="Arandelas anodizadas" data-price="6999">$ 6.999</button>
+        </article>
+
+        <article class="card">
+          <div class="productVisual levers">╱╲</div>
+          <h3>MANIJAS REGULABLES WIRTZ</h3>
+          <p>Plegables y regulables</p>
+          <button class="priceBtn" data-product="Manijas regulables Wirtz" data-price="39900">$ 39.900</button>
+        </article>
+
+        <article class="card">
+          <div class="productVisual discs">◔ ◕</div>
+          <h3>CUBRE DISCOS WIRTZ</h3>
+          <p>Protección y estilo</p>
+          <button class="priceBtn" data-product="Cubre discos Wirtz" data-price="18900">$ 18.900</button>
+        </article>
+      </div>
+    </section>
+
+    <section id="ofertas" class="ctaStrip">
+      <div>
+        <strong>¿QUERÉS SABER EL COSTO DE ENVÍO?</strong>
+        <span>Elegí un producto, compartí tu ubicación o ingresá tu dirección.</span>
+      </div>
+      <a class="btn ghost" href="#productos">VER PRODUCTOS</a>
+    </section>
+  </main>
+
+  <footer id="contacto">
+    <div>◎ <span>SEGUINOS EN INSTAGRAM<br><strong>@blunteed</strong></span></div>
+    <div class="footerBrand">BLUNTEDSHOP</div>
+    <div>LLEVÁ TU MOTO<br>AL SIGUIENTE NIVEL.</div>
+  </footer>
+
+  <button id="whatsappFloat" class="whatsappFloat" aria-label="WhatsApp">☎</button>
+  <div class="waHint">¿Necesitás ayuda?<br><strong>Escribinos por WhatsApp</strong></div>
+
+  <dialog id="checkoutModal">
+    <form method="dialog" class="checkout">
+      <button class="close" value="cancel" aria-label="Cerrar">×</button>
+      <div class="eyebrow">COMPRA RÁPIDA</div>
+      <h2 id="checkoutProduct">Producto</h2>
+      <p class="checkoutPrice" id="checkoutPrice">$ 0</p>
+
+      <label>Tu ubicación para el envío</label>
+      <div class="locationActions">
+        <button type="button" class="btn primary" id="geoBtn">USAR MI UBICACIÓN</button>
+        <span id="geoStatus">También podés escribir tu dirección.</span>
+      </div>
+
+      <input id="address" type="text" placeholder="Calle, número, ciudad y provincia" autocomplete="street-address" />
+
+      <div class="shippingBox">
+        <span>Envío estimado</span>
+        <strong id="shippingCost">A calcular</strong>
+      </div>
+
+      <div class="shippingBox total">
+        <span>Total estimado</span>
+        <strong id="totalCost">—</strong>
+      </div>
+
+      <button type="button" class="btn mp full" id="payMercadoPago">PAGAR CON MERCADO PAGO</button>
+      <div id="paymentStatus" class="paymentStatus" aria-live="polite"></div>
+      <button type="button" class="btn ghost full" id="continueWhatsApp">CONTINUAR POR WHATSAPP</button>
+      <small>Envío estimado por zona: CABA/GBA $4.500 · Buenos Aires interior $6.500 · resto del país $8.500. El valor final se confirma por WhatsApp.</small>
+    </form>
+  </dialog>
+
+  <script src="app.js"></script>
+</body>
+</html>
